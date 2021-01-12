@@ -9,7 +9,7 @@ public class Table {
     public static Bowl bowl1 = new Bowl(1);
     public Table(){
         System.out.println("Table()");
-        bow2.f1(1);
+        bowl2.f1(1);
     }
     public void f2(int marker){
         System.out.println("f2(" + marker + ")");
