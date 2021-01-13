@@ -1,9 +1,6 @@
 package com.java.base.test;
 
-import com.java.base.entity.Apple;
-import com.java.base.entity.Flower;
-import com.java.base.entity.Leaf;
-import com.java.base.entity.Person;
+import com.java.base.entity.*;
 import org.junit.Test;
 
 /**
@@ -30,6 +27,10 @@ public class MainTest {
     public void test3(){
         Flower x = new Flower();
         x.printPetalCount();
+    }
+
+    public void StaticInitialization(){
+
     }
 
 
