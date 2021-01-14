@@ -1,5 +1,6 @@
 package com.java.base.test;
 
+import com.java.base.controller.Burrito;
 import com.java.base.entity.*;
 import org.junit.Test;
 
@@ -29,7 +30,22 @@ public class MainTest {
         x.printPetalCount();
     }
 
-    public void StaticInitialization(){
+    @Test
+    public void SimpleEnumUse(){
+        Spiciness howHot = Spiciness.MEDIUM;
+        System.out.println(howHot);
+
+        for(Spiciness s : Spiciness.values()){
+            System.out.println(s + ".ordinal" + s.ordinal());
+        }
+
+        Burrito
+                plain = new Burrito(Spiciness.NOT),
+                greenChild = new Burrito(Spiciness.MEDIUM),
+                jalapeno = new Burrito(Spiciness.HOT);
+        plain.describe();
+        greenChild.describe();
+        jalapeno.describe();
 
     }
 
