@@ -49,5 +49,11 @@ public class MainTest {
 
     }
 
+    @Test
+    public void soap(){
+        Bath b = new Bath();
+        System.out.println(b);
+    }
+
 
 }
