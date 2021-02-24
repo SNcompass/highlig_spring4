@@ -1,8 +1,10 @@
 package com.java.base.test;
 
 import com.java.base.controller.Burrito;
+import com.java.base.controller.nine.Apply;
 import com.java.base.entity.*;
 import com.java.base.entity.eight.*;
+import com.java.base.entity.nine.*;
 import org.junit.Test;
 
 /**
@@ -81,5 +83,18 @@ public class MainTest {
         for(Composing composing : composings){
             composing.dispose();
         }
+    }
+
+    @Test
+    public void eightPolyConstructor(){
+        new RoundGlyph(5);
+    }
+
+    @Test
+    public void nineFilterProcessor(){
+//        Waveform w = new Waveform();
+//        Apply.process(new FilterAdapter(new LowPass(1.0)),w);
+//        Apply.process(new FilterAdapter(new HighPass(2.0)),w);
+//        Apply.process(new FilterAdapter(new BandPass(3.0,4.0)),w);
     }
 }
