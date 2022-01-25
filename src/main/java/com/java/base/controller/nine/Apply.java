@@ -8,7 +8,7 @@ import com.java.base.entity.nine.*;
  */
 public class Apply {
 
-    public static void process(Processor p,String s){
+    public static void process(Processor p,Object s){
         System.out.println("Using Processor" + p.name());
         System.out.println(p.process(s));
     }
